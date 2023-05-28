@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Caudex-Bold.ttf",
+      "sha1": "d0abf61c72bfe174d820f24075e01e732f4abd83"
+    },
+    {
+      "path": "assets/fonts/Righteous-Regular.ttf",
+      "sha1": "fccc33a3bed2658a31e3d83cdfdb9482dcec20a8"
+    },
+    {
+      "path": "assets/fonts/Satisfy-Regular.ttf",
+      "sha1": "86a3893ac9b6ec87d8a5dd847ef6ad967ce97318"
+    }
+  ]
+}
