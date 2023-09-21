@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   bg: {
     position: 'relative',
     height: '100%',
+    backgroundColor: 'black',
   },
   txtCont: {
     position: 'absolute',
