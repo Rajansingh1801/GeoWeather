@@ -31,7 +31,6 @@ import humidity from '../../assets/icon/humidity.png';
 import sunrise from '../../assets/icon/sunrise.png';
 import sunset from '../../assets/icon/sunset.png';
 import daytime from '../../assets/icon/day-and-night.png';
-import nightday from '../../assets/icon/nightday.png';
 
 const Home = props => {
   const [weatherdata, setWeatherData] = useState();
@@ -49,7 +48,6 @@ const Home = props => {
   const [sunsetTimeHour, setSunsetTimeHour] = useState('');
   const [sunsetTimeMin, setSunsetTimeMIn] = useState('');
   const [totalDayLenght, setTotalDaylenght] = useState();
-  const [totalNightLenght, setTotalNightlenght] = useState();
 
   const [bg, setBg] = useState(p1);
 
@@ -59,7 +57,7 @@ const Home = props => {
   const searchlocation = async () => {
     try {
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=d41cbaaad2f01b75473e4e3263fbfc2f&units=metric`;
-      // console.log(url);
+      console.log(url);
       const response = await fetch(url);
       const data = await response.json();
       // console.log(response);
@@ -124,9 +122,9 @@ const Home = props => {
   ];
 
   useEffect(() => {
-    var date = new Date().getDate(); //Current Date
-    var month = monthNames[new Date().getMonth() + 1]; //Current Month
-    var year = new Date().getFullYear(); //Current Year
+    var date = new Date().getDate();
+    var month = monthNames[new Date().getMonth()];
+    var year = new Date().getFullYear();
     setCurrentDate(date + ', ' + month + ' ' + year);
 
     const timer = setInterval(() => {

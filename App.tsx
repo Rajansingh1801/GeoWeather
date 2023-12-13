@@ -17,10 +17,6 @@ const App = () => {
       <View style={styles.container}>
         {splash ? <Loading /> : <Home name="rajan" />}
       </View>
-
-      {/* <Home /> */}
-      {/* <Loading /> */}
-      {/* <SplashScreen /> */}
     </>
   );
 };
